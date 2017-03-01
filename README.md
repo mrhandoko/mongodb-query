@@ -7,7 +7,7 @@ Install first, MongoDB & Mongoose as your databases & ODM.
 > show dbs & use academic
 
 ### Create Collection
-> db.createCollection("departement", {autoIndexId:true}) or db.createCollection("departement", {autoIndexId:true})
+> db.createCollection("departement", {autoIndexId:true}) or db.createCollection("departement")
 
 ### Show List Collections
 > db.getCollectionNames or show collections
@@ -40,3 +40,6 @@ Install first, MongoDB & Mongoose as your databases & ODM.
 
 ### Show Key name & address in student Collection
 > db.student.find({},{_id:0,name:1, address:1})
+
+### Delete all rows
+> db.books.remove({})
